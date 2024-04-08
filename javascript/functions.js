@@ -1,7 +1,7 @@
-var x = 5;
-var a = 1;
-var c = 5;
-var w;
+// var x = 5;
+// var a = 1;
+// var c = 5;
+// var w;
 
 
 // function myFun(){
@@ -32,11 +32,25 @@ var w;
 // let t = o(3, 4)
 // console.log(t)
 
-function myFunction(b)
-{
-    w =3
-    return b = x*10;
+// function myFunction(b)
+// {
+//     w =3
+//     return b = x*10;
     
+// }
+// //calling function
+// console.log(myFunction(a));
+
+// function myArgument(e, k){
+//     return arguments.length; // returnss number of arguments
+// }
+// myArgument(4,3)
+
+function sum(...rest){
+    let sum = 0
+    for(let rests of rest){
+        sum += rests
+    }
+    return sum
 }
-//calling function
-console.log(myFunction(a));
+let m = sum(3,4,3 , 5, 4)
